@@ -1,0 +1,29 @@
+﻿<Window x:Class="SequenceAnalyzer.Windows.AboutWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SequenceAnalyzer.Windows"
+        mc:Ignorable="d"
+        Title="About" Height="250" Width="400" Topmost="True" WindowStartupLocation="CenterOwner" ResizeMode="NoResize">
+    <Grid Background="WhiteSmoke">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="0.8*"/>
+        </Grid.RowDefinitions>
+        <Label Content="SequenceAnalyzer" HorizontalAlignment="Left" Margin="10, 10" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
+        <Label Content="1.0.0.0" HorizontalAlignment="Left"  Margin="10, 47, 0, 0" VerticalAlignment="Top" FontWeight="Bold" FontSize="12"/>
+        <Image Source="/SequenceAnalyzer;component/Images/About.png" HorizontalAlignment="Stretch" Margin="245, 25, 0, 0" VerticalAlignment="Top" Height="130" Width="175"/>
+        <Grid Grid.Row="1" Background="LightGray">
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="5, 5">
+                SequenceAnalyzer is an open-source program and can be downloaded at <Hyperlink NavigateUri="https://github.com/Zaliro/sequence-analyzer" RequestNavigate="Hyperlink_RequestNavigate">https://github.com/Zaliro/sequence-analyzer</Hyperlink>.
+            </TextBlock>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Center" Margin="5, 5" FontStyle="Italic">
+                This program is using <Hyperlink NavigateUri="https://github.com/charri/Font-Awesome-WPF" RequestNavigate="Hyperlink_RequestNavigate">FontAwesome.WPF</Hyperlink> and <Hyperlink NavigateUri="https://github.com/jacobslusser/ScintillaNET" RequestNavigate="Hyperlink_RequestNavigate">ScintillaNET</Hyperlink>.
+            </TextBlock>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Bottom" Margin="5, 5" FontWeight="Bold">
+                Licensed under <Hyperlink NavigateUri="https://github.com/Zaliro/sequence-analyzer/blob/master/LICENSE" RequestNavigate="Hyperlink_RequestNavigate">GNU General Public License v3.0</Hyperlink>.
+            </TextBlock>
+        </Grid>
+    </Grid>
+</Window>
